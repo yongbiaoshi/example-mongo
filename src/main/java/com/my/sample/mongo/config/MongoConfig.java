@@ -18,10 +18,14 @@ public class MongoConfig {
 
     @PostConstruct
     public void init() {
-
         converter.setTypeMapper(defaultMongoTypeMapper());
     }
 
+    /**
+     * 消除自动产生的_class属性
+     *
+     * @return typeMapper
+     */
     @Bean
     public DefaultMongoTypeMapper defaultMongoTypeMapper() {
         return new DefaultMongoTypeMapper(null, converter.getMappingContext());

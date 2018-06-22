@@ -1,4 +1,4 @@
-package com.my.sample.mongo;
+package com.my.sample.mongo.controller;
 
 import com.my.sample.mongo.dao.repository.ArticleRepository;
 import com.my.sample.mongo.entity.document.Article;
