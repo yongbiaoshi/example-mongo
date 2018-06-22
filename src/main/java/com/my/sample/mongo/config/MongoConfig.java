@@ -9,6 +9,9 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
+/**
+ * Mongo配置
+ */
 @Configuration
 @EnableMongoRepositories(basePackages = {"com.my.sample.mongo.dao.repository"})
 public class MongoConfig {
