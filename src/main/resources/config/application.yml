@@ -10,6 +10,10 @@ spring:
       host: 192.168.2.242
       port: 27017
       database: ground
+    web:
+      pageable:
+        one-indexed-parameters: true
+        default-page-size: 10
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     locale: zh_CN
