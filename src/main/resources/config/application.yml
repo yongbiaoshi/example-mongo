@@ -18,3 +18,5 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     locale: zh_CN
     time-zone: GMT+8
+logging:
+  config: classpath:config/logback.xml
